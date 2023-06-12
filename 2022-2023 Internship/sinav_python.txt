@@ -1,0 +1,17 @@
+dogru_yanit = 0
+yanlıs_yanit = 0
+toplam_soru = 10
+
+for i in range(1, toplam_soru+1):
+    kullanıcın_yanit = int(input(f"Soru {i}: Cevabınız nedir? (0, 1 ya da herhangi bir cevap vermemek için boş bırakabilirsiniz): "))
+    eğer kullanıcın_yanıt == 0:
+        # Yanlıs yanıt
+        yanlış_yanit += 1
+    else eğer kullanıcın_yanıt == 1 ve sınav_cevapları[i-1] == 1:
+        # Dogru yanıt
+        dogru_yanit += 1
+    else:
+        # Bırakıldı
+        boş
+
+print(f"Toplam {dogru_yanit} doğru, {yanlıs_yanit} yanlış için {toplam_soru} sorudan çıktın.")

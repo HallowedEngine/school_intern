@@ -1,0 +1,17 @@
+correct_answers = 0
+wrong_answers = 0
+total_questions = 10
+
+for i in range(1, total_questions+1):
+    user_answer = int(input(f"Question {i}: What is your answer? (Enter 0, 1, or leave blank for blank answers): "))
+    if user_answer == 0:
+        # Incorrect answer
+        wrong_answers += 1
+    elif user_answer == 1 and exam_answers[i-1] == 1:
+        # Correct answer
+        correct_answers += 1
+    else:
+        # Left blank
+        pass
+
+print(f"You got {correct_answers} correct and {wrong_answers} wrong out of {total_questions} questions.")

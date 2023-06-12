@@ -1,0 +1,18 @@
+#def volume_of_cylinder(radius, height):
+    volume = 3.14159 * (radius**2) * height
+    return volume
+ 												#<-------- FORMULA
+#def surface_area_of_cylinder(radius, height):
+    surface_area = 2 * 3.14159 * radius * height + 2 * 3.14159 * radius**2
+    return surface_area
+
+
+
+
+# öRNEK KULLANIM
+radius = 1.0    #input girin
+height = 10.0   #input girin
+volume = volume_of_cylinder(radius, height)
+surface_area = surface_area_of_cylinder(radius, height)
+print("The volume of the cylinder is:", volume)
+print("The surface area of the cylinder is:", surface_area)

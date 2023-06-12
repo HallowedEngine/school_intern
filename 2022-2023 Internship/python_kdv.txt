@@ -1,0 +1,5 @@
+user_price = float(input("Fiyatınızı Girin: "))
+
+kdv_price = user_price * 0.18
+
+print("KVD (18%): TL:", kdv_price, ".00")

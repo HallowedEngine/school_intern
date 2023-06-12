@@ -1,0 +1,12 @@
+use_age = int(input("Yaşınızı Girin: "))
+
+if use_age < 18:
+    age_category = "Çocuk"
+elif 18 <= use_age <= 59:
+    age_category = "Genç"
+elif 60 <= use_age:
+    age_category = "Yaşlı"
+else:
+    age_category = "Hata: Kullanıcın yaşını doğru giriniz."
+
+print("Yaşın", age_category, "!" )
